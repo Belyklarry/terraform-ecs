@@ -8,7 +8,7 @@ on:
 
 env:
   REPO_URL: 889321718134.dkr.ecr.eu-west-1.amazonaws.com/ecs-demo-customer
-  REPOSITORY: ${{ env.REPO_URL%/* }}
+  REPOSITORY: 889321718134.dkr.ecr.eu-west-1.amazonaws.com
   COMMIT_HASH: ${{ github.sha }}
 
 jobs:
