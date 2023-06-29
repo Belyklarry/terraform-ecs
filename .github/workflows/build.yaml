@@ -60,3 +60,7 @@ jobs:
         with:
           name: build-artifacts
           path: artifacts
+
+      - name: Set image URI output
+        run: |
+          echo "IMAGE_URI=${{ env.REPO_URL }}:${{ env.COMMIT_HASH }}" >> $GITHUB_ENV
